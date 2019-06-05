@@ -1,7 +1,8 @@
 <template>
   <div>
-
-
+      <footer>
+      <p> {{ author }} </p>
+      </footer>
   </div>
 </template>
 
@@ -11,13 +12,22 @@
 
 export default {
     data () {
-    return {
+    return { 
+        author: 'Desenvolvido por Artur como exercício extra do Senai'
 
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
+footer {
+    background-color: black;
+    padding: 6px;
+}
+p {
+    color: orange;
+    text-align: center;
+}
 
 </style>
