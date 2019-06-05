@@ -1,18 +1,16 @@
 # senai-pizzarias-extras
 
-> A Vue.js project
+> Projeto utilizando Vue.js
 
-## Build Setup
+## Como prosseguir:
 
 ``` bash
-# install dependencies
+# dependências
 npm install
 
-# serve with hot reload at localhost:8080
+# executando no localhost:8080
 npm run dev
 
-# build for production with minification
+# para fazer buil para produção e minificação
 npm run build
 ```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
