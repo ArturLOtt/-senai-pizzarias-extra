@@ -1,0 +1,14 @@
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\bin\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.deps.json
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\bin\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.runtimeconfig.json
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\bin\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.runtimeconfig.dev.json
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\bin\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.dll
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\obj\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.csprojAssemblyReference.cache
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\obj\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.csproj.CoreCompileInputs.cache
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\obj\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.RazorAssemblyInfo.cache
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\obj\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.RazorAssemblyInfo.cs
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\obj\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.AssemblyInfoInputs.cache
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\obj\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.AssemblyInfo.cs
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\obj\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.RazorTargetAssemblyInfo.cache
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\bin\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.pdb
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\obj\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.dll
+C:\Users\22972804830\Desktop\The Gathering\-senai-pizzarias-extra\Backend\Senai_Pizzarias_Extra\Senai_Pizzarias_Extra\obj\Debug\netcoreapp2.1\Senai_Pizzarias_Extra.pdb
