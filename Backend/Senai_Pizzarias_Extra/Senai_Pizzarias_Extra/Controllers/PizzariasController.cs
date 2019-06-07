@@ -43,6 +43,7 @@ namespace Senai_Pizzarias_Extra.Controllers
             }
         }
 
+//      [Authorize(Roles= "gandolf")]
         [HttpPost]
         public IActionResult Post(Pizzarias pizzarias)
         {

@@ -3,8 +3,8 @@
       
       <nav>
         <ul>
-            <li><router-link to="/"> Home </router-link></li>
-            <li><router-link to="/Login"><button> Entrar </button></router-link></li>
+            <li><router-link to="/" exact> Home </router-link></li>
+            <li><router-link to="/Login" exact><button> Entrar </button></router-link></li>
             <li> {{ title }} </li>
         </ul> 
       </nav>
@@ -34,6 +34,7 @@ ul {
 li {
     display: inline-block;
     margin: 0 10px;
+    color: royalblue;
 }
 a {
     color: #fff;

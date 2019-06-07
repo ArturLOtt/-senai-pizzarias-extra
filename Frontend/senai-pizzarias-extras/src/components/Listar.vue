@@ -2,7 +2,7 @@
   <div id="show-blogs">
       <h2>Listar</h2>
       <div v-for="blog in blogs" v-bind:key="blog.id" class="single-blog">
-        <h2 v-rainbow> {{ blog.title | to-uppercase }} </h2>
+        <router-link v-bind:to="'/Listar/'" + blog.id><h2 v-rainbow> {{ blog.title | to-uppercase }} </h2></router-link>
         <article> {{ blog.body }} </article>
       </div>
   </div>
@@ -13,7 +13,9 @@
 export default {
     data () {
     return {
-      blogs: []
+      blogs: [
+        
+      ]
 
     }
   },

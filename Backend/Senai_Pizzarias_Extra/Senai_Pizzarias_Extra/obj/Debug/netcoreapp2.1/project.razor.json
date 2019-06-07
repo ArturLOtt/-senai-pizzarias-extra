@@ -1,0 +1,18 @@
+{
+  "FilePath": "c:\\Users\\Artur_2\\Desktop\\The Gathering\\-senai-pizzarias-extra\\Backend\\Senai_Pizzarias_Extra\\Senai_Pizzarias_Extra\\Senai_Pizzarias_Extra.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "Senai_Pizzarias_Extra",
+  "Documents": []
+}
