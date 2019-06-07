@@ -20,9 +20,9 @@ namespace Senai_Pizzarias_Extra.Controllers
     public class PizzariasController : ControllerBase
     {
 
-        private IPizzariasRepository ConsultaRepository { get; set; }
+        private IPizzariasRepository PizzariasRepository { get; set; }
 
-        public PizzariasController() => ConsultaRepository = new PizzariasRepository();
+        public PizzariasController() => PizzariasRepository = new PizzariasRepository();
 
         UsuarioRepository usuarioRepository = new UsuarioRepository();
 
