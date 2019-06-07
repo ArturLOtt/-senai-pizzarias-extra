@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "e4bc9392-a4cd-4ac8-8020-cfbd7c22ca16",
+		"name": "Senai_pizzarias_extras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Pizzarias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Pizzarias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Pizzarias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Entrar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"VuuR@VuuR.com\",\r\n  \"senha\": \"VuuR\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro de Usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"usuario@usuario.com\",\r\n  \"senha\": \"usuario\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro de Pizzarias",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Pizzaria airazziP\",\r\n  \"isvegan\": false,\r\n  \"categoria\": 12,\r\n  \"endereco\": \"Av. Barão de Limeira, 500\",\r\n  \"telefoneComercial\": \"1188333388\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Pizzarias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Pizzarias"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

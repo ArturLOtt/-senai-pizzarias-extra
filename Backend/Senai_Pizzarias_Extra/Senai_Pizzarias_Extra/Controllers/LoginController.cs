@@ -41,8 +41,8 @@ namespace Senai_Pizzarias_Extra.Controllers
                 var claims = new[]
                 {
                     new Claim(JwtRegisteredClaimNames.Email, loginUsuario.Email),
-                    new Claim(JwtRegisteredClaimNames.Jti, loginUsuario.Id.ToString()),
-                    //new Claim(ClaimTypes.Role, loginUsuario.IdTipoUsuario.ToString())
+                    new Claim(JwtRegisteredClaimNames.Jti, loginUsuario.Id.ToString())
+                    //, new Claim(ClaimTypes.Role, loginUsuario.IdTipoUsuario.ToString())
                 };
 
                 var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("Senai_Pizzarias_Extra-chave-autenticacao"));

@@ -42,7 +42,28 @@ namespace Senai_Pizzarias_Extra.Controllers
                 return BadRequest();
             }
         }
-           
-        
-/**/}
+
+        [HttpPost]
+        public IActionResult Post(Pizzarias pizzarias)
+        {
+            try
+            {
+                using (SENAI_PIZZARIAS_EXTRAContext ctx = new SENAI_PIZZARIAS_EXTRAContext())
+                {
+                    ctx.Pizzarias.Add(pizzarias);
+                    ctx.SaveChanges();
+                }
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest();
+            }
+        }
+
+
+
+        /**/
+    }
 }
