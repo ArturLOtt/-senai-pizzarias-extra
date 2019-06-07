@@ -16,6 +16,21 @@
     </div>
 
 
+
+    <div>
+        <form>
+            <input>  Informe o email
+            <input> Informe a senha
+            <button> Cadastrar Novo Usuario </button>
+        </form>
+    </div>
+
+
+
+
+
+
+
   </div>
 </template>
 

@@ -10,15 +10,17 @@
 </template>
 
 <script>
-// import { Listar } from "./components/Listar.vue";
-import Header from './components/HeaderNotLogin.vue';
+
+// import HeaderYes from './components/HeaderLogin.vue';
+import HeaderNot from './components/HeaderNotLogin.vue';
 import Listar from './components/Listar.vue';
 import Footer from './components/Footer.vue';
 
 
 export default {
 components: {
-  'app-header': Header,
+  // 'app-header': HeaderYes,
+  'app-header': HeaderNot,
   'app-listagem': Listar,
   'app-footer': Footer
 },

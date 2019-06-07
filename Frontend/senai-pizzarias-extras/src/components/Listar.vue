@@ -1,17 +1,14 @@
 <template>
   <div id="show-blogs">
- <h2>Listar</h2>
-  <!-- <div v-for="blog in blogs" class="single-blog">
-  <h2> {{ blog.title }} </h2>
-  <article> {{ blog.body }} <article
-    </div>
- -->
+      <h2>Listar</h2>
+      <div v-for="blog in blogs" v-bind:key="blog.id" class="single-blog">
+        <h2 v-rainbow> {{ blog.title | to-uppercase }} </h2>
+        <article> {{ blog.body }} </article>
+      </div>
   </div>
 </template>
 
 <script>
-
-
 
 export default {
     data () {
@@ -24,11 +21,24 @@ export default {
 
   },
   created() {
-    this.$http.get('https://jsonplaceholder.typicode.com/posts')
+    this.$http.get('http://localhost:5000/api/Pizzarias')
+    // https://jsonplaceholder.typicode.com/posts
     .then(function(data){
+      console.log(data);
       data.body.slice(0,10);
-
     })
+  },
+  filters: {
+    'to-uppercase': function(value){
+      return value.toUpperCase();
+    }
+  },
+  directives: {
+    'rainbow': {
+      bind(el, binding, vnode){
+        el.style.color = '#' + Math.random().toString(16).slice(2, 8);
+      }
+    }
   }
 }
 </script>
