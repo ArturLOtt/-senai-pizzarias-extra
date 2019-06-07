@@ -21,8 +21,9 @@ export default {
 
   },
   created() {
-    this.$http.get('http://localhost:5000/api/Pizzarias')
+    this.$http.get('https://jsonplaceholder.typicode.com/posts')
     // https://jsonplaceholder.typicode.com/posts
+    // http://localhost:5000/api/Pizzarias
     .then(function(data){
       console.log(data);
       data.body.slice(0,10);
