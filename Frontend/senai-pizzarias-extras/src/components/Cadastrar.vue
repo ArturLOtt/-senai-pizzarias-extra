@@ -1,9 +1,9 @@
 <template>
   <div>
- <h2>Login</h2>
 
 
 
+<h2> Cadastro de Pizzaria </h2>
     <div>
         <form>
             <input>  Informe o nome da Pizzaria
@@ -17,6 +17,7 @@
 
 <hr>
 
+<h2>Cadastro de usuario</h2>
     <div>
         <form>
             <input>  Informe o email
@@ -29,7 +30,7 @@
 
 <hr>
 
-
+<h2>Exemplo funcional que eu estava usando no firebase</h2>
 
 <div id="add-blog">
         <h2>Add a New Blog Post</h2>
@@ -78,14 +79,22 @@ export default {
                 categories: [],
                 author: ''
             },
-            authors: ['The Net Ninja', 'The Angular Avenger', 'The Vue Vindicator'],
-            submitted: false
+            authors: ['1st', '2nd', '3rd'],
+            submitted: false,
+            pizz: {
+              nome: '',
+              isvegan: false,
+              categoria: '',
+              endereco: '',
+              telefoneComercial: ''
+            }
         }
     },
     methods: {
         post: function(){
             this.$http.post('https://pronto-para-conectar.firebaseio.com/posts.json',
-             this.blog).then(function(data){
+            //  this.blog).then(function(data){
+             this.pizz).then(function(data){
                 console.log(data);
                 this.submitted = true;
             });

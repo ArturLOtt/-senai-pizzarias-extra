@@ -1,19 +1,20 @@
 <template>
   <div id="show-blogs">
-      <h2>Listar</h2>
+      <h2> Listagem das Pizzarias Cadastradas no sistema FS </h2>
 
 
-<div v-for="blog in blogs" v-bind="blog" v-bind:key="blog.id" class="single-blog">
-   <!-- <router-link> -->
-     <h2> {{ blog.title | to-uppercase }} </h2>
+<div v-for="pizz in pizzs" v-bind="pizz" v-bind:key="pizz.id" class="single-blog">
+   <!-- <router-link v-bind:to="'/Listar/' + pizz.id"> -->
+     <h2 v-rainbow> {{ pizz.title | to-uppercase }} </h2>
       <!-- </router-link> -->
-         <article> </article>
+         <article> {{ pizz.body }} </article>
+         <!-- <p> {{ pizz.nome }} </p> -->
+         <!-- <p> {{ pizz.isvegan }} </p> -->
+         <!-- <p> {{ pizz.categoria }} </p> -->
+         <!-- <p> {{ pizz.endereco }} </p> -->
+         <!-- <p> {{ pizz.telefoneComercial }} </p> -->
+
        </div>
-
-
-
-
-
 
   </div>
 </template>
@@ -23,7 +24,7 @@
 export default {
     data () {
     return {
-      blogs: []
+      pizzs: []
     }
   },
   methods: {
@@ -37,12 +38,12 @@ export default {
     .then(function(data){
       return data.json();
     }).then(function(data){
-      let blogsArray = [];
+      let pizzsArray = [];
       for (let key in data){
         data[key].id = key
-        blogsArray.push(data[key]);
+        pizzsArray.push(data[key]);
       };
-      this.blogs = blogsArray;
+      this.pizzs = pizzsArray;
     })
   },
   computed: {

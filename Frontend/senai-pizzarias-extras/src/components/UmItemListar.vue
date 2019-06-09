@@ -1,10 +1,11 @@
 <template>
     <div id="single-blog">
-        <h1> {{ blog.title }} </h1>
-        <article> {{ blog.content }} </article>
-        <p> Author: {{ blog.Author }} </p>
+        <h1> {{ pizz.title }} </h1>
+        <!-- <article> {{ pizz.content }} </article> -->
+        <article> {{ pizz.body }} </article>
+        <!-- <p> Author: {{ pizz.Author }} </p> -->
         <ul>
-          <!-- <li v-for="category in blog.categories"> {{ category }} </li> -->
+          <!-- <li v-for="category in pizz.categories"> {{ category }} </li> -->
         </ul>
     </div>
 </template>
@@ -14,15 +15,17 @@ export default {
     data() {
         return{
             id: this.$route.params.id,
-            blog: {}
+            pizz: {}
         }
     },
     created() {
-        this.$http.get('https://pronto-para-conectar.firebaseio.com/posts/' + this.id + '.json')
+        this.$http.get('https://jsonplaceholder.typicode.com/posts' + this.id + '.json')
+        // https://jsonplaceholder.typicode.com/posts
+        // https://pronto-para-conectar.firebaseio.com/posts/
         .then(function(data){
             return data.json();
         }).then(function(data){
-          this.blog = data;
+          this.pizz = data;
         });
     }
 }

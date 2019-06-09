@@ -7,8 +7,8 @@
 <div id="login">
     <h2>Efetue seu login!</h2>
     <form>
-        <input type="text" placeholder="email" v-model="blog.name"><br>
-        <input type="password" placeholder="Password" v-model="blog.pass"><br>
+        <input type="text" placeholder="email" v-model="pizz.name"><br>
+        <input type="password" placeholder="Password" v-model="pizz.pass"><br>
         <button v-on:click="entrar">Entrar</button>
     </form>
 </div>
@@ -24,7 +24,7 @@
 export default {
     data () {
       return {
-        blog: {
+        pizz: {
           name: '',
           pass: ''
         }
@@ -34,7 +34,7 @@ export default {
 
       entrar: function(){
 
-      // if (this.blog.name == 'gandolf' & this.blog.pass == '132') {
+      // if (this.pizz.name == 'gandolf' & this.pizz.pass == '132') {
 
       // }
       }
