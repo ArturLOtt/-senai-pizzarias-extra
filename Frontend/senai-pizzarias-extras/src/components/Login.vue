@@ -7,9 +7,9 @@
 <div id="login">
     <h2>Efetue seu login!</h2>
     <form>
-        <input type="text" placeholder="email"><br>
-        <input type="password" placeholder="Password"><br>
-        <button>Entrar</button>
+        <input type="text" placeholder="email" v-model="blog.name"><br>
+        <input type="password" placeholder="Password" v-model="blog.pass"><br>
+        <button v-on:click="entrar">Entrar</button>
     </form>
 </div>
 
@@ -23,14 +23,22 @@
 
 export default {
     data () {
-    return {
-
+      return {
+        blog: {
+          name: '',
+          pass: ''
+        }
       }
     },
     methods: {
-      // if (name == 'gandolf' & pass == '132') {
+
+      entrar: function(){
+
+      // if (this.blog.name == 'gandolf' & this.blog.pass == '132') {
 
       // }
+      }
+
     }
 
 }

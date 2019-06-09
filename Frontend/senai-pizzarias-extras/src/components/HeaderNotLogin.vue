@@ -1,15 +1,15 @@
 <template>
   <div>
-      
+
       <nav>
         <ul>
             <li><router-link to="/" exact> Home </router-link></li>
-            <li><router-link to="/Login" exact><button> Entrar </button></router-link></li>
+            <li><router-link to="/login" exact><button> Entrar </button></router-link></li>
             <li> {{ title }} </li>
-        </ul> 
+        </ul>
       </nav>
 
-      
+
   </div>
 </template>
 

@@ -1,11 +1,8 @@
 <template>
   <div>
     <app-header></app-header>
-    <h1>Hey Ninja style</h1>
-    <app-listagem></app-listagem>
-    <app-footer></app-footer>
-    <hr>
     <router-view></router-view>
+    <app-footer></app-footer>
 
   </div>
 </template>

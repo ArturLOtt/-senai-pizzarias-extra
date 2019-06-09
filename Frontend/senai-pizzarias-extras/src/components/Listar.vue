@@ -1,10 +1,20 @@
 <template>
   <div id="show-blogs">
       <h2>Listar</h2>
-      <div v-for="blog in blogs" v-bind:key="blog.id" class="single-blog">
-        <router-link v-bind:to="'/Listar/'" + blog.id><h2 v-rainbow> {{ blog.title | to-uppercase }} </h2></router-link>
-        <article> {{ blog.content }} </article>
-      </div>
+
+
+<div v-for="blog in blogs" v-bind="blog" v-bind:key="blog.id" class="single-blog">
+   <!-- <router-link> -->
+     <h2> {{ blog.title | to-uppercase }} </h2>
+      <!-- </router-link> -->
+         <article> </article>
+       </div>
+
+
+
+
+
+
   </div>
 </template>
 
@@ -13,15 +23,14 @@
 export default {
     data () {
     return {
-      blogs: [   ]
-
+      blogs: []
     }
   },
   methods: {
 
   },
   created() {
-    this.$http.get('https://pronto-para-conectar.firebaseio.com/posts.json')
+    this.$http.get('https://jsonplaceholder.typicode.com/posts')
     // https://jsonplaceholder.typicode.com/posts
     // http://localhost:5000/api/Pizzarias
     // https://pronto-para-conectar.firebaseio.com/posts.json
