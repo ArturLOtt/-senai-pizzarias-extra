@@ -3,7 +3,7 @@
       <h2>Listar</h2>
       <div v-for="blog in blogs" v-bind:key="blog.id" class="single-blog">
         <router-link v-bind:to="'/Listar/'" + blog.id><h2 v-rainbow> {{ blog.title | to-uppercase }} </h2></router-link>
-        <article> {{ blog.body }} </article>
+        <article> {{ blog.content }} </article>
       </div>
   </div>
 </template>
@@ -13,9 +13,7 @@
 export default {
     data () {
     return {
-      blogs: [
-        
-      ]
+      blogs: [   ]
 
     }
   },
@@ -23,13 +21,23 @@ export default {
 
   },
   created() {
-    this.$http.get('https://jsonplaceholder.typicode.com/posts')
+    this.$http.get('https://pronto-para-conectar.firebaseio.com/posts.json')
     // https://jsonplaceholder.typicode.com/posts
     // http://localhost:5000/api/Pizzarias
+    // https://pronto-para-conectar.firebaseio.com/posts.json
     .then(function(data){
-      console.log(data);
-      data.body.slice(0,10);
+      return data.json();
+    }).then(function(data){
+      let blogsArray = [];
+      for (let key in data){
+        data[key].id = key
+        blogsArray.push(data[key]);
+      };
+      this.blogs = blogsArray;
     })
+  },
+  computed: {
+
   },
   filters: {
     'to-uppercase': function(value){

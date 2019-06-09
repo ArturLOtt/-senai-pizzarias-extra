@@ -4,11 +4,11 @@
 
 
 
-<div id="login-prop">
+<div id="login">
     <h2>Efetue seu login!</h2>
     <form>
-        <input>
-        <input>
+        <input type="text" placeholder="email"><br>
+        <input type="password" placeholder="Password"><br>
         <button>Entrar</button>
     </form>
 </div>
@@ -25,8 +25,14 @@ export default {
     data () {
     return {
 
+      }
+    },
+    methods: {
+      // if (name == 'gandolf' & pass == '132') {
+
+      // }
     }
-  }
+
 }
 </script>
 
