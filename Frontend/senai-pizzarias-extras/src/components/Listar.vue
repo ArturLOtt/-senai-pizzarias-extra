@@ -10,7 +10,7 @@
          <article> {{ pizz.body }} </article>
          <!-- <p> {{ pizz.nome }} </p> -->
          <!-- <p> {{ pizz.isvegan }} </p> -->
-         <!-- <p> {{ pizz.categoria }} </p> -->
+         <!-- <p> {{ pizz.categoria | to-categorias }} </p> -->
          <!-- <p> {{ pizz.endereco }} </p> -->
          <!-- <p> {{ pizz.telefoneComercial }} </p> -->
 
@@ -52,6 +52,16 @@ export default {
   filters: {
     'to-uppercase': function(value){
       return value.toUpperCase();
+    },
+    // Podendo ser categoria $ (até 30 reais a pizza), $$ (de 31 até 50) ou $$$ (acima de 50 reais o valor da pizza)
+    'to-categorias': function(value){
+      if (value < 30) {
+        return value = '$';
+      } else if (value > 50) {
+        return value = '$$$';
+      } else {
+        return value = '$$';
+      }
     }
   },
   directives: {
